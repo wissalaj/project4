@@ -31,10 +31,13 @@ for(let i=0;i<minus.length;i++){
         });
     }
 //remove elment
-for(let i=0; i<heart.length; i++){
+for(let i=0; i<trash.length; i++){
     let button=trash[i];
     button.addEventListener("click",function(){
         button.parentElement.parentElement.remove();
+        total.innerHTML=
+            parseFloat(total.innerHTML)- parseFloat(
+                button.parentElement.previousElementSibling.innerHTML) + "D";
     }); 
 }
 //heart

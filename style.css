@@ -78,8 +78,7 @@ margin-right: 10px;
 }
 .icons{
     display: flex;
-    justify-content: center;
-    
-    margin-right: 10px;
+    margin-left: 0px;
 }
+
 
