@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    
 }
 .menu-bar{
 background:#fff8dc;
@@ -55,8 +56,13 @@ li h5{
 }
 
 /*sub menu  debut */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .col-top{
     display: flex;
+ 
 }
 .col-buttom{
     display: flex;

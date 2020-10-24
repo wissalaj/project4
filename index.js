@@ -35,9 +35,12 @@ for(let i=0; i<trash.length; i++){
     let button=trash[i];
     button.addEventListener("click",function(){
         button.parentElement.parentElement.remove();
-        total.innerHTML=
+        if(button.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML>0){
+            total.innerHTML=
             parseFloat(total.innerHTML)- parseFloat(
-                button.parentElement.previousElementSibling.innerHTML) + "D";
+                button.parentElement.previousElementSibling.innerHTML )*(button.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML) + "D";
+        }
+        
     }); 
 }
 //heart
